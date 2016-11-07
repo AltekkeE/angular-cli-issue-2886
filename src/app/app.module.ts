@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { XSRFStrategy, XHRBackend, RequestOptions } from '@angular/http';
+import { XSRFStrategy } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { AuthenticationConnectionBackend } from './shared/security/authenticated-connection.backend';
-import { CustomXSRFStrategy } from './shared/security/custom-xsrf-strategy';
+import { CustomXSRFStrategy } from './custom-xsrf-strategy';
 
 
 
@@ -19,7 +18,6 @@ import { CustomXSRFStrategy } from './shared/security/custom-xsrf-strategy';
     ],
     providers: [
         { provide: XSRFStrategy, useClass: CustomXSRFStrategy },
-        { provide: XHRBackend, useClass: AuthenticationConnectionBackend },
     ],
     bootstrap: [
         AppComponent,
