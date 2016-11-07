@@ -5,11 +5,12 @@
 /tmp
 
 # dependencies
-/node_modules*
+/node_modules
 /bower_components
 
 # IDEs and editors
 /.idea
+/.vscode
 .project
 .classpath
 *.launch
@@ -31,6 +32,3 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
-
-#Test Output
-util.mocha.json
