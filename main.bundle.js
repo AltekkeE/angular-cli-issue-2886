@@ -39786,7 +39786,32 @@ webpackEmptyContext.id = 333;
 
 
 /***/ },
-/* 334 */,
+/* 334 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(290);
+/* harmony export (binding) */ __webpack_require__.d(exports, "csrfToken", function() { return csrfToken; });
+
+
+
+
+
+if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_23" /* enableProdMode */])();
+}
+// Export csrf token results so that app can import it
+var csrfToken = 'token';
+// Boostrap the app
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app___["a" /* AppModule */]);
+
+
+/***/ },
 /* 335 */,
 /* 336 */
 /***/ function(module, exports, __webpack_require__) {
@@ -51054,7 +51079,7 @@ var CustomXSRFStrategy = (function () {
     function CustomXSRFStrategy() {
     }
     CustomXSRFStrategy.prototype.configureRequest = function (req) {
-        console.log(__WEBPACK_IMPORTED_MODULE_0__main__["csrfToken"]);
+        console.log(__WEBPACK_IMPORTED_MODULE_0__main__["a" /* csrfToken */]);
     };
     return CustomXSRFStrategy;
 }());
@@ -51071,7 +51096,7 @@ var CustomXSRFStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(290);
-/* harmony export (binding) */ __webpack_require__.d(exports, "csrfToken", function() { return csrfToken; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return csrfToken; });
 
 
 
@@ -55928,7 +55953,7 @@ if (_global['navigator'] && _global['navigator'].geolocation) {
 /* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(433);
+module.exports = __webpack_require__(334);
 
 
 /***/ }
