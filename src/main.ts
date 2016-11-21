@@ -10,7 +10,7 @@ if (environment.production) {
 }
 
 // Export csrf token results so that app can import it
-export var csrfToken = {"token":"dec8e94e-8e14-4713-b6b1-2767608550f7","parameterName":"_csrf","headerName":"X-XSRF-TOKEN"};
+export var csrfToken = 'token';
 
 // Boostrap the app
 platformBrowserDynamic().bootstrapModule(AppModule);

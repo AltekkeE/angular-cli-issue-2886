@@ -17,8 +17,9 @@ import { CustomXSRFStrategy } from './custom-xsrf-strategy';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
